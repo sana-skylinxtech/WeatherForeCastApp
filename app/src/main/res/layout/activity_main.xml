@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main">
+
+        <include
+            android:id="@+id/rootLayout"
+            layout="@layout/root_layout_activity_main" />
+
+        <include
+            android:id="@+id/bottomSheet"
+            layout="@layout/bottom_sheet_layout_activity_main" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
