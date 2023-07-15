@@ -159,7 +159,6 @@ class MainActivity : AppCompatActivity(),LocationListener {
                 binding.rootLayout.currentLocationName.text = it.get(0).timezone
                 binding.rootLayout.weatherType.text = it.get(0).weather
                 binding.rootLayout.lastUpdatedOn.text = "Last updated on "+it.get(0).last_updated_on
-
                 weatherInfoDataModel!!.clear()
                 weatherInfoDataModel!!.add(WeatherInfoDataModel("Current temperature",it.get(0).temp))
                 weatherInfoDataModel!!.add(WeatherInfoDataModel("Current weather",it.get(0).weather))
